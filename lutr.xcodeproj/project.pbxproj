@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		427C364E19B855BD005B4CDE /* PNGColorTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 427C364C19B855BD005B4CDE /* PNGColorTable.cpp */; };
 		428BB99319AF0598003A5CBC /* OutputFormatFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428BB99119AF0598003A5CBC /* OutputFormatFactory.cpp */; };
 		428BB99F19AFD049003A5CBC /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428BB99E19AFD049003A5CBC /* Color.cpp */; };
 		428BB9A219AFD06C003A5CBC /* ColorUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428BB9A019AFD06C003A5CBC /* ColorUtility.cpp */; };
@@ -15,6 +16,7 @@
 		42B2D21E19B6E5AB00F84231 /* ConsoleOutputFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42B2D21C19B6E5AB00F84231 /* ConsoleOutputFormat.cpp */; };
 		42D56B9D19B83C1200A4E4D3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D56B9C19B83C1200A4E4D3 /* main.cpp */; };
 		42D56CE519B84AD900A4E4D3 /* CubeOutputFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D56CE319B84AD900A4E4D3 /* CubeOutputFormat.cpp */; };
+		42D56CEB19B851AC00A4E4D3 /* lodepng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D56CE919B851AC00A4E4D3 /* lodepng.cpp */; };
 		42EFC4B219ADC58B008BC159 /* ACTColorTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42EFC4B019ADC58B008BC159 /* ACTColorTable.cpp */; };
 		42EFC4BA19AE31CE008BC159 /* ColorTableFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42EFC4B819AE31CE008BC159 /* ColorTableFactory.cpp */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		427C364C19B855BD005B4CDE /* PNGColorTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PNGColorTable.cpp; sourceTree = "<group>"; };
+		427C364F19B855E7005B4CDE /* PNGColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNGColorTable.h; sourceTree = "<group>"; };
 		428BB99119AF0598003A5CBC /* OutputFormatFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OutputFormatFactory.cpp; sourceTree = "<group>"; wrapsLines = 0; };
 		428BB99419AF05CC003A5CBC /* OutputFormatFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputFormatFactory.h; sourceTree = "<group>"; };
 		428BB99C19AFD049003A5CBC /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		42D56B9C19B83C1200A4E4D3 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		42D56CE319B84AD900A4E4D3 /* CubeOutputFormat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeOutputFormat.cpp; sourceTree = "<group>"; };
 		42D56CE619B84B7700A4E4D3 /* CubeOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeOutputFormat.h; sourceTree = "<group>"; };
+		42D56CE919B851AC00A4E4D3 /* lodepng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lodepng.cpp; sourceTree = "<group>"; };
+		42D56CEA19B851AC00A4E4D3 /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lodepng.h; sourceTree = "<group>"; };
 		42EFC41719ADA608008BC159 /* lutr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lutr; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EFC49C19ADBEAE008BC159 /* IColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IColorTable.h; sourceTree = "<group>"; };
 		42EFC4A319ADBF57008BC159 /* IOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOutputFormat.h; sourceTree = "<group>"; };
@@ -122,9 +128,27 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		42D56CE719B8518700A4E4D3 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				42D56CE819B8518700A4E4D3 /* lodepng */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		42D56CE819B8518700A4E4D3 /* lodepng */ = {
+			isa = PBXGroup;
+			children = (
+				42D56CE919B851AC00A4E4D3 /* lodepng.cpp */,
+				42D56CEA19B851AC00A4E4D3 /* lodepng.h */,
+			);
+			path = lodepng;
+			sourceTree = "<group>";
+		};
 		42EFC40E19ADA608008BC159 = {
 			isa = PBXGroup;
 			children = (
+				42D56CE719B8518700A4E4D3 /* lib */,
 				428BB99A19AFD049003A5CBC /* Color */,
 				42EFC49A19ADBEAE008BC159 /* ColorTable */,
 				428F827819B822BF0022E18E /* lutr */,
@@ -157,6 +181,7 @@
 				42EFC4BB19AE31E4008BC159 /* ColorTableFactory.h */,
 				42EFC49C19ADBEAE008BC159 /* IColorTable.h */,
 				428BB9A719B225E8003A5CBC /* PALColorTable.h */,
+				427C364F19B855E7005B4CDE /* PNGColorTable.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -167,6 +192,7 @@
 				42EFC4B019ADC58B008BC159 /* ACTColorTable.cpp */,
 				42EFC4B819AE31CE008BC159 /* ColorTableFactory.cpp */,
 				428BB9A419B225CB003A5CBC /* PALColorTable.cpp */,
+				427C364C19B855BD005B4CDE /* PNGColorTable.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -254,8 +280,10 @@
 			files = (
 				428BB9A619B225CB003A5CBC /* PALColorTable.cpp in Sources */,
 				428BB99F19AFD049003A5CBC /* Color.cpp in Sources */,
+				427C364E19B855BD005B4CDE /* PNGColorTable.cpp in Sources */,
 				42D56B9D19B83C1200A4E4D3 /* main.cpp in Sources */,
 				428BB9A219AFD06C003A5CBC /* ColorUtility.cpp in Sources */,
+				42D56CEB19B851AC00A4E4D3 /* lodepng.cpp in Sources */,
 				428BB99319AF0598003A5CBC /* OutputFormatFactory.cpp in Sources */,
 				428F828619B822BF0022E18E /* Converter.cpp in Sources */,
 				42D56CE519B84AD900A4E4D3 /* CubeOutputFormat.cpp in Sources */,

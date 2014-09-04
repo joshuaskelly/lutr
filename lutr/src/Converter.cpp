@@ -14,10 +14,20 @@
 Converter::Converter(IColorTablePtr& colorTable, IOutputFormatPtr outputFormat) {
     this->colorTable = colorTable;
     this->outputFormat = outputFormat;
+}
+
+Converter::~Converter() {
+    delete this->colorTable;
+    this->colorTable = nullptr;
     
+    delete this->outputFormat;
+    this->outputFormat = nullptr;
+}
+
+void Converter::Convert() {
     int lutSize = 8;
     int level = lutSize - 1;
-
+    
     this->outputFormat->Begin();
     
     for (int b = 0; b <= level; b++) {
@@ -49,16 +59,4 @@ Converter::Converter(IColorTablePtr& colorTable, IOutputFormatPtr outputFormat) 
     }
     
     this->outputFormat->End();
-}
-
-Converter::~Converter() {
-    delete this->colorTable;
-    this->colorTable = nullptr;
-    
-    delete this->outputFormat;
-    this->outputFormat = nullptr;
-}
-
-void Converter::Convert() {
-    
 }

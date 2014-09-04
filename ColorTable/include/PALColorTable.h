@@ -9,6 +9,8 @@
 #ifndef __pal2cube__PALColorTable__
 #define __pal2cube__PALColorTable__
 
+#include <vector>
+
 #include "IColorTable.h"
 
 class PALColorTable : public IColorTable {

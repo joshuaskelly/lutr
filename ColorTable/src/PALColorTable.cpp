@@ -10,7 +10,6 @@
 #include <fstream>
 #include <string>
 #include <vector>
-#include <iostream>
 
 #include "PALColorTable.h"
 #include "Utility.h"

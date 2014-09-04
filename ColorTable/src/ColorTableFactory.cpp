@@ -11,6 +11,7 @@
 #include "ColorTableFactory.h"
 #include "ACTColorTable.h"
 #include "PALColorTable.h"
+#include "PNGColorTable.h"
 #include "Utility.h"
 
 IColorTablePtr ColorTableFactory::GetColorTable(std::string path) {
@@ -37,6 +38,15 @@ IColorTablePtr ColorTableFactory::GetColorTable(std::string path) {
     }
     else if (fileExtension == "pal" || fileExtension == "PAL") {
         PALColorTable* colorTable = new PALColorTable();
+        
+        if (colorTable->Load(path)) {
+            return colorTable;
+        }
+        
+        return nullptr;
+    }
+    else if (fileExtension == "png" || fileExtension == "PNG") {
+        PNGColorTable* colorTable = new PNGColorTable();
         
         if (colorTable->Load(path)) {
             return colorTable;
