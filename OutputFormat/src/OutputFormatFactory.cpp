@@ -10,6 +10,7 @@
 
 #include "OutputFormatFactory.h"
 #include "ConsoleOutputFormat.h"
+#include "CubeOutputFormat.h"
 
 const std::string OutputFormatFactory::CommandLineFlag = "--output";
 
@@ -27,6 +28,11 @@ IOutputFormatPtr OutputFormatFactory::GetOutputFormat(std::string format) {
     
     if (desiredFormat == "console") {
         ConsoleOutputFormat* f = new ConsoleOutputFormat();
+        
+        return f;
+    }
+    else if (desiredFormat == "cube" || desiredFormat == "default") {
+        CubeOutputFormat* f = new CubeOutputFormat();
         
         return f;
     }

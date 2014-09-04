@@ -14,13 +14,13 @@
 #include "OutputFormatFactory.h"
 
 void showUsage() {
-    std::cout << "usage: pal2cube [--output-format=format] file ..." << std::endl;
+    std::cout << "usage: pal2cube [--output=format] file ..." << std::endl;
 }
 
 int main(int argc, const char* argv[])
 {
     std::string filepath;
-    std::string formatOption = "default";
+    std::string formatOption = "--output=default";
     
     if (argc == 1) {
         showUsage();

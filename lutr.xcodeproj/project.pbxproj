@@ -13,7 +13,8 @@
 		428BB9A619B225CB003A5CBC /* PALColorTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428BB9A419B225CB003A5CBC /* PALColorTable.cpp */; };
 		428F828619B822BF0022E18E /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428F827E19B822BF0022E18E /* Converter.cpp */; };
 		42B2D21E19B6E5AB00F84231 /* ConsoleOutputFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42B2D21C19B6E5AB00F84231 /* ConsoleOutputFormat.cpp */; };
-		42D56B9B19B823C400A4E4D3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428F827C19B822BF0022E18E /* main.cpp */; };
+		42D56B9D19B83C1200A4E4D3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D56B9C19B83C1200A4E4D3 /* main.cpp */; };
+		42D56CE519B84AD900A4E4D3 /* CubeOutputFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42D56CE319B84AD900A4E4D3 /* CubeOutputFormat.cpp */; };
 		42EFC4B219ADC58B008BC159 /* ACTColorTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42EFC4B019ADC58B008BC159 /* ACTColorTable.cpp */; };
 		42EFC4BA19AE31CE008BC159 /* ColorTableFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42EFC4B819AE31CE008BC159 /* ColorTableFactory.cpp */; };
 /* End PBXBuildFile section */
@@ -41,10 +42,12 @@
 		428BB9A719B225E8003A5CBC /* PALColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PALColorTable.h; sourceTree = "<group>"; };
 		428F827A19B822BF0022E18E /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
 		428F827B19B822BF0022E18E /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
-		428F827C19B822BF0022E18E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		428F827E19B822BF0022E18E /* Converter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Converter.cpp; sourceTree = "<group>"; };
 		42B2D21C19B6E5AB00F84231 /* ConsoleOutputFormat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleOutputFormat.cpp; sourceTree = "<group>"; };
 		42B2D21F19B6E5C500F84231 /* ConsoleOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleOutputFormat.h; sourceTree = "<group>"; };
+		42D56B9C19B83C1200A4E4D3 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		42D56CE319B84AD900A4E4D3 /* CubeOutputFormat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CubeOutputFormat.cpp; sourceTree = "<group>"; };
+		42D56CE619B84B7700A4E4D3 /* CubeOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeOutputFormat.h; sourceTree = "<group>"; };
 		42EFC41719ADA608008BC159 /* lutr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lutr; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EFC49C19ADBEAE008BC159 /* IColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IColorTable.h; sourceTree = "<group>"; };
 		42EFC4A319ADBF57008BC159 /* IOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOutputFormat.h; sourceTree = "<group>"; };
@@ -96,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				428F827919B822BF0022E18E /* include */,
-				428F827C19B822BF0022E18E /* main.cpp */,
 				428F827D19B822BF0022E18E /* src */,
 			);
 			path = lutr;
@@ -114,6 +116,7 @@
 		428F827D19B822BF0022E18E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				42D56B9C19B83C1200A4E4D3 /* main.cpp */,
 				428F827E19B822BF0022E18E /* Converter.cpp */,
 			);
 			path = src;
@@ -181,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				42B2D21F19B6E5C500F84231 /* ConsoleOutputFormat.h */,
+				42D56CE619B84B7700A4E4D3 /* CubeOutputFormat.h */,
 				42EFC4A319ADBF57008BC159 /* IOutputFormat.h */,
 				428BB99419AF05CC003A5CBC /* OutputFormatFactory.h */,
 			);
@@ -191,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				42B2D21C19B6E5AB00F84231 /* ConsoleOutputFormat.cpp */,
+				42D56CE319B84AD900A4E4D3 /* CubeOutputFormat.cpp */,
 				428BB99119AF0598003A5CBC /* OutputFormatFactory.cpp */,
 			);
 			path = src;
@@ -249,10 +254,11 @@
 			files = (
 				428BB9A619B225CB003A5CBC /* PALColorTable.cpp in Sources */,
 				428BB99F19AFD049003A5CBC /* Color.cpp in Sources */,
-				42D56B9B19B823C400A4E4D3 /* main.cpp in Sources */,
+				42D56B9D19B83C1200A4E4D3 /* main.cpp in Sources */,
 				428BB9A219AFD06C003A5CBC /* ColorUtility.cpp in Sources */,
 				428BB99319AF0598003A5CBC /* OutputFormatFactory.cpp in Sources */,
 				428F828619B822BF0022E18E /* Converter.cpp in Sources */,
+				42D56CE519B84AD900A4E4D3 /* CubeOutputFormat.cpp in Sources */,
 				42EFC4B219ADC58B008BC159 /* ACTColorTable.cpp in Sources */,
 				42EFC4BA19AE31CE008BC159 /* ColorTableFactory.cpp in Sources */,
 				42B2D21E19B6E5AB00F84231 /* ConsoleOutputFormat.cpp in Sources */,

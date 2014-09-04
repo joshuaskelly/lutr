@@ -65,8 +65,8 @@ bool PALColorTable::LoadJASC(std::string filepath) {
         
         if (triple.size() == 3) {
             ColorPtr c = new Color(atoi(triple[0].c_str()),
-                                 atoi(triple[1].c_str()),
-                                 atoi(triple[2].c_str()));
+                                   atoi(triple[1].c_str()),
+                                   atoi(triple[2].c_str()));
             
             this->colors.push_back(c);
         }
