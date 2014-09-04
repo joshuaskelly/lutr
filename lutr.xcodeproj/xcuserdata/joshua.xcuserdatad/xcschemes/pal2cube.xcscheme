@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "42EFC41619ADA608008BC159"
-               BuildableName = "pal2cube"
-               BlueprintName = "pal2cube"
-               ReferencedContainer = "container:pal2cube.xcodeproj">
+               BuildableName = "lutr"
+               BlueprintName = "lutr"
+               ReferencedContainer = "container:lutr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42EFC41619ADA608008BC159"
-            BuildableName = "pal2cube"
-            BlueprintName = "pal2cube"
-            ReferencedContainer = "container:pal2cube.xcodeproj">
+            BuildableName = "lutr"
+            BlueprintName = "lutr"
+            ReferencedContainer = "container:lutr.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,11 +52,21 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42EFC41619ADA608008BC159"
-            BuildableName = "pal2cube"
-            BlueprintName = "pal2cube"
-            ReferencedContainer = "container:pal2cube.xcodeproj">
+            BuildableName = "lutr"
+            BlueprintName = "lutr"
+            ReferencedContainer = "container:lutr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "--output=console"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/joshua/Repositories/lutr/lutr/test/data/db32.pal"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "42EFC41619ADA608008BC159"
-            BuildableName = "pal2cube"
-            BlueprintName = "pal2cube"
-            ReferencedContainer = "container:pal2cube.xcodeproj">
+            BuildableName = "lutr"
+            BlueprintName = "lutr"
+            ReferencedContainer = "container:lutr.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

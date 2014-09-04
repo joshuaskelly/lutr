@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		428BB99319AF0598003A5CBC /* OutputFormatFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428BB99119AF0598003A5CBC /* OutputFormatFactory.cpp */; };
+		428BB99F19AFD049003A5CBC /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428BB99E19AFD049003A5CBC /* Color.cpp */; };
+		428BB9A219AFD06C003A5CBC /* ColorUtility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428BB9A019AFD06C003A5CBC /* ColorUtility.cpp */; };
+		428BB9A619B225CB003A5CBC /* PALColorTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428BB9A419B225CB003A5CBC /* PALColorTable.cpp */; };
+		428F828619B822BF0022E18E /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428F827E19B822BF0022E18E /* Converter.cpp */; };
+		42B2D21E19B6E5AB00F84231 /* ConsoleOutputFormat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42B2D21C19B6E5AB00F84231 /* ConsoleOutputFormat.cpp */; };
+		42D56B9B19B823C400A4E4D3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 428F827C19B822BF0022E18E /* main.cpp */; };
+		42EFC4B219ADC58B008BC159 /* ACTColorTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42EFC4B019ADC58B008BC159 /* ACTColorTable.cpp */; };
+		42EFC4BA19AE31CE008BC159 /* ColorTableFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42EFC4B819AE31CE008BC159 /* ColorTableFactory.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42EFC41519ADA608008BC159 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		428BB99119AF0598003A5CBC /* OutputFormatFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OutputFormatFactory.cpp; sourceTree = "<group>"; wrapsLines = 0; };
+		428BB99419AF05CC003A5CBC /* OutputFormatFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputFormatFactory.h; sourceTree = "<group>"; };
+		428BB99C19AFD049003A5CBC /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		428BB99E19AFD049003A5CBC /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Color.cpp; sourceTree = "<group>"; };
+		428BB9A019AFD06C003A5CBC /* ColorUtility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorUtility.cpp; sourceTree = "<group>"; };
+		428BB9A319AFD08B003A5CBC /* ColorUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtility.h; sourceTree = "<group>"; };
+		428BB9A419B225CB003A5CBC /* PALColorTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PALColorTable.cpp; sourceTree = "<group>"; };
+		428BB9A719B225E8003A5CBC /* PALColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PALColorTable.h; sourceTree = "<group>"; };
+		428F827A19B822BF0022E18E /* Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Converter.h; sourceTree = "<group>"; };
+		428F827B19B822BF0022E18E /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		428F827C19B822BF0022E18E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		428F827E19B822BF0022E18E /* Converter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Converter.cpp; sourceTree = "<group>"; };
+		42B2D21C19B6E5AB00F84231 /* ConsoleOutputFormat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConsoleOutputFormat.cpp; sourceTree = "<group>"; };
+		42B2D21F19B6E5C500F84231 /* ConsoleOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleOutputFormat.h; sourceTree = "<group>"; };
+		42EFC41719ADA608008BC159 /* lutr */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lutr; sourceTree = BUILT_PRODUCTS_DIR; };
+		42EFC49C19ADBEAE008BC159 /* IColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IColorTable.h; sourceTree = "<group>"; };
+		42EFC4A319ADBF57008BC159 /* IOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOutputFormat.h; sourceTree = "<group>"; };
+		42EFC4B019ADC58B008BC159 /* ACTColorTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ACTColorTable.cpp; sourceTree = "<group>"; wrapsLines = 0; };
+		42EFC4B319ADC5A4008BC159 /* ACTColorTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTColorTable.h; sourceTree = "<group>"; };
+		42EFC4B819AE31CE008BC159 /* ColorTableFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorTableFactory.cpp; sourceTree = "<group>"; };
+		42EFC4BB19AE31E4008BC159 /* ColorTableFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTableFactory.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42EFC41419ADA608008BC159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		428BB99A19AFD049003A5CBC /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				428BB99B19AFD049003A5CBC /* include */,
+				428BB99D19AFD049003A5CBC /* src */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		428BB99B19AFD049003A5CBC /* include */ = {
+			isa = PBXGroup;
+			children = (
+				428BB99C19AFD049003A5CBC /* Color.h */,
+				428BB9A319AFD08B003A5CBC /* ColorUtility.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		428BB99D19AFD049003A5CBC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				428BB99E19AFD049003A5CBC /* Color.cpp */,
+				428BB9A019AFD06C003A5CBC /* ColorUtility.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		428F827819B822BF0022E18E /* lutr */ = {
+			isa = PBXGroup;
+			children = (
+				428F827919B822BF0022E18E /* include */,
+				428F827C19B822BF0022E18E /* main.cpp */,
+				428F827D19B822BF0022E18E /* src */,
+			);
+			path = lutr;
+			sourceTree = "<group>";
+		};
+		428F827919B822BF0022E18E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				428F827A19B822BF0022E18E /* Converter.h */,
+				428F827B19B822BF0022E18E /* Utility.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		428F827D19B822BF0022E18E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				428F827E19B822BF0022E18E /* Converter.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		42EFC40E19ADA608008BC159 = {
+			isa = PBXGroup;
+			children = (
+				428BB99A19AFD049003A5CBC /* Color */,
+				42EFC49A19ADBEAE008BC159 /* ColorTable */,
+				428F827819B822BF0022E18E /* lutr */,
+				42EFC4A119ADBF57008BC159 /* OutputFormat */,
+				42EFC41819ADA608008BC159 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42EFC41819ADA608008BC159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42EFC41719ADA608008BC159 /* lutr */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42EFC49A19ADBEAE008BC159 /* ColorTable */ = {
+			isa = PBXGroup;
+			children = (
+				42EFC49B19ADBEAE008BC159 /* include */,
+				42EFC49E19ADBEAE008BC159 /* src */,
+			);
+			path = ColorTable;
+			sourceTree = "<group>";
+		};
+		42EFC49B19ADBEAE008BC159 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				42EFC4B319ADC5A4008BC159 /* ACTColorTable.h */,
+				42EFC4BB19AE31E4008BC159 /* ColorTableFactory.h */,
+				42EFC49C19ADBEAE008BC159 /* IColorTable.h */,
+				428BB9A719B225E8003A5CBC /* PALColorTable.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		42EFC49E19ADBEAE008BC159 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				42EFC4B019ADC58B008BC159 /* ACTColorTable.cpp */,
+				42EFC4B819AE31CE008BC159 /* ColorTableFactory.cpp */,
+				428BB9A419B225CB003A5CBC /* PALColorTable.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		42EFC4A119ADBF57008BC159 /* OutputFormat */ = {
+			isa = PBXGroup;
+			children = (
+				42EFC4A219ADBF57008BC159 /* include */,
+				42EFC4A519ADBF57008BC159 /* src */,
+			);
+			path = OutputFormat;
+			sourceTree = "<group>";
+		};
+		42EFC4A219ADBF57008BC159 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				42B2D21F19B6E5C500F84231 /* ConsoleOutputFormat.h */,
+				42EFC4A319ADBF57008BC159 /* IOutputFormat.h */,
+				428BB99419AF05CC003A5CBC /* OutputFormatFactory.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		42EFC4A519ADBF57008BC159 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				42B2D21C19B6E5AB00F84231 /* ConsoleOutputFormat.cpp */,
+				428BB99119AF0598003A5CBC /* OutputFormatFactory.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42EFC41619ADA608008BC159 /* lutr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42EFC42019ADA608008BC159 /* Build configuration list for PBXNativeTarget "lutr" */;
+			buildPhases = (
+				42EFC41319ADA608008BC159 /* Sources */,
+				42EFC41419ADA608008BC159 /* Frameworks */,
+				42EFC41519ADA608008BC159 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lutr;
+			productName = pal2cube;
+			productReference = 42EFC41719ADA608008BC159 /* lutr */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42EFC40F19ADA608008BC159 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Joshua Skelton";
+			};
+			buildConfigurationList = 42EFC41219ADA608008BC159 /* Build configuration list for PBXProject "lutr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42EFC40E19ADA608008BC159;
+			productRefGroup = 42EFC41819ADA608008BC159 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42EFC41619ADA608008BC159 /* lutr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42EFC41319ADA608008BC159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428BB9A619B225CB003A5CBC /* PALColorTable.cpp in Sources */,
+				428BB99F19AFD049003A5CBC /* Color.cpp in Sources */,
+				42D56B9B19B823C400A4E4D3 /* main.cpp in Sources */,
+				428BB9A219AFD06C003A5CBC /* ColorUtility.cpp in Sources */,
+				428BB99319AF0598003A5CBC /* OutputFormatFactory.cpp in Sources */,
+				428F828619B822BF0022E18E /* Converter.cpp in Sources */,
+				42EFC4B219ADC58B008BC159 /* ACTColorTable.cpp in Sources */,
+				42EFC4BA19AE31CE008BC159 /* ColorTableFactory.cpp in Sources */,
+				42B2D21E19B6E5AB00F84231 /* ConsoleOutputFormat.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		42EFC41E19ADA608008BC159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42EFC41F19ADA608008BC159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42EFC42119ADA608008BC159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = lutr;
+			};
+			name = Debug;
+		};
+		42EFC42219ADA608008BC159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = lutr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42EFC41219ADA608008BC159 /* Build configuration list for PBXProject "lutr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EFC41E19ADA608008BC159 /* Debug */,
+				42EFC41F19ADA608008BC159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42EFC42019ADA608008BC159 /* Build configuration list for PBXNativeTarget "lutr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42EFC42119ADA608008BC159 /* Debug */,
+				42EFC42219ADA608008BC159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42EFC40F19ADA608008BC159 /* Project object */;
+}
