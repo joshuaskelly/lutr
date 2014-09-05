@@ -78,5 +78,6 @@ bool PALColorTable::LoadJASC(std::string filepath) {
 }
 
 bool PALColorTable::LoadMicrosoft(std::string filepath) {
-    return true;
+    std::cout << "Microsoft Palette format is currently not supported." << std::endl;
+    return false;
 }

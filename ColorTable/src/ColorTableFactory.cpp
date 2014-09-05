@@ -21,7 +21,7 @@ IColorTablePtr ColorTableFactory::GetColorTable(std::string path) {
     for (std::string::reverse_iterator rit = path.rbegin(); rit != path.rend(); rit++) {
         char current = *rit;
         
-        if (current == '.') {
+        if (current == '.' && fileExtension == "") {
             fileExtension = fileName;
         }
         if (current == '/' || current == '\\') {
@@ -54,9 +54,9 @@ IColorTablePtr ColorTableFactory::GetColorTable(std::string path) {
             return nullptr;
         }
     }
-    
     else {
-        
+        std::cout << "Unsupported file format: " << fileExtension << std::endl;
+        return nullptr;
     }
     
     colorTable->FileName(fileName);

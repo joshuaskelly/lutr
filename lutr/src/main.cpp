@@ -13,10 +13,8 @@
 #include "ColorTableFactory.h"
 #include "OutputFormatFactory.h"
 
-#include "lodepng.h"
-
 void showUsage() {
-    std::cout << "usage: pal2cube [--output=format] file ..." << std::endl;
+    std::cout << "usage: lutr [--output=format] file ..." << std::endl;
 }
 
 int main(int argc, const char* argv[])
