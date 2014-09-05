@@ -21,9 +21,9 @@ public:
     const int G() { return this->g; }
     const int B() { return this->b; }
     
-    float Rf() { return this->r / 255.0f; }
-    float Gf() { return this->g / 255.0f; }
-    float Bf() { return this->b / 255.0f; }
+    const float Rf() { return this->r / 255.0f; }
+    const float Gf() { return this->g / 255.0f; }
+    const float Bf() { return this->b / 255.0f; }
     
     friend bool operator== (const Color& lhs, const Color& rhs);
     
