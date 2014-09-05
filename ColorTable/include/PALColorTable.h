@@ -23,11 +23,15 @@ public:
     
     bool Load(std::string filepath);
     
+    std::string FileName() { return this->fileName; }
+    void FileName(std::string fileName) { this->fileName = fileName; }
+    
 private:
     bool LoadJASC(std::string filepath);
     bool LoadMicrosoft(std::string filepath);
     
     std::vector<ColorPtr> colors;
+    std::string fileName;
 };
 
 #endif

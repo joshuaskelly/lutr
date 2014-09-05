@@ -16,48 +16,50 @@
 
 IColorTablePtr ColorTableFactory::GetColorTable(std::string path) {
     std::string fileExtension = "";
+    std::string fileName = "";
     
     for (std::string::reverse_iterator rit = path.rbegin(); rit != path.rend(); rit++) {
         char current = *rit;
         
         if (current == '.') {
+            fileExtension = fileName;
+        }
+        if (current == '/' || current == '\\') {
             break;
         }
         
-        fileExtension = current + fileExtension;
+        fileName = current + fileName;
     }
     
+    IColorTablePtr colorTable = nullptr;
+    
     if (fileExtension == "act" || fileExtension == "ACT") {
-        ACTColorTable* colorTable = new ACTColorTable();
+        colorTable = new ACTColorTable();
         
-        if (colorTable->Load(path)) {
-            return colorTable;
+        if (!colorTable->Load(path)) {
+            return nullptr;
         }
-        
-        return nullptr;
     }
     else if (fileExtension == "pal" || fileExtension == "PAL") {
-        PALColorTable* colorTable = new PALColorTable();
+        colorTable = new PALColorTable();
         
-        if (colorTable->Load(path)) {
-            return colorTable;
+        if (!colorTable->Load(path)) {
+            return nullptr;
         }
-        
-        return nullptr;
     }
     else if (fileExtension == "png" || fileExtension == "PNG") {
-        PNGColorTable* colorTable = new PNGColorTable();
+        colorTable = new PNGColorTable();
         
-        if (colorTable->Load(path)) {
-            return colorTable;
+        if (!colorTable->Load(path)) {
+            return nullptr;
         }
-        
-        return nullptr;
     }
     
     else {
         
     }
     
-    return nullptr;
+    colorTable->FileName(fileName);
+    
+    return colorTable;
 }

@@ -11,7 +11,7 @@
 #include "ConsoleOutputFormat.h"
 
 ConsoleOutputFormat::ConsoleOutputFormat() {
-    
+    this->colorTable = nullptr;
 }
 
 ConsoleOutputFormat::~ConsoleOutputFormat() {

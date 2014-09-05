@@ -11,7 +11,7 @@
 #include "CubeOutputFormat.h"
 
 CubeOutputFormat::CubeOutputFormat() {
-    
+    this->colorTable = nullptr;
 }
 
 CubeOutputFormat::~CubeOutputFormat() {
@@ -19,7 +19,7 @@ CubeOutputFormat::~CubeOutputFormat() {
 }
 
 void CubeOutputFormat::Begin() {
-    file.open("test.cube");
+    file.open(this->ColorTable()->FileName() + ".cube");
     
     file << "LUT_3D_SIZE 8" << std::endl << std::endl;
 }

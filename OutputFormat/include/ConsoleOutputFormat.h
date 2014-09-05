@@ -19,6 +19,12 @@ public:
     void Begin();
     void End();
     void Write(Color c);
+    
+    IColorTablePtr ColorTable() { return this->colorTable; }
+    void ColorTable(IColorTablePtr colorTable) { this->colorTable = colorTable; }
+    
+private:
+    IColorTablePtr colorTable;
 };
 
 #endif

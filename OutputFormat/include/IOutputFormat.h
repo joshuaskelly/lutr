@@ -10,6 +10,7 @@
 #define pal2cube_IOutputFormat_h
 
 #include "Color.h"
+#include "IColorTable.h"
 
 class IOutputFormat {
 public:
@@ -17,6 +18,9 @@ public:
     virtual void End() = 0;
     virtual void Write(Color c) = 0;
     void Write(ColorPtr c) { Write(*c); }
+    
+    virtual IColorTablePtr ColorTable() = 0;
+    virtual void ColorTable(IColorTablePtr colorTable) = 0;
 };
 
 typedef IOutputFormat* IOutputFormatPtr;

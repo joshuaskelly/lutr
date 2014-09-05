@@ -23,8 +23,12 @@ public:
     void End();
     void Write(Color c);
     
+    IColorTablePtr ColorTable() { return this->colorTable; }
+    void ColorTable(IColorTablePtr colorTable) { this->colorTable = colorTable; }
+    
 private:
     std::ofstream file;
+    IColorTablePtr colorTable;
 };
 
 #endif

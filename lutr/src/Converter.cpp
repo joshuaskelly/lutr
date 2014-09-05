@@ -14,6 +14,8 @@
 Converter::Converter(IColorTablePtr& colorTable, IOutputFormatPtr outputFormat) {
     this->colorTable = colorTable;
     this->outputFormat = outputFormat;
+    
+    this->outputFormat->ColorTable(this->colorTable);
 }
 
 Converter::~Converter() {

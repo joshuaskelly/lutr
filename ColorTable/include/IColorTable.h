@@ -15,6 +15,10 @@ class IColorTable {
 public: 
     virtual int Count() = 0;
     virtual ColorPtr At(int index) = 0;
+    virtual bool Load(std::string filepath) = 0;
+    virtual std::string FileName() = 0;
+    virtual void FileName(std::string fileName) = 0;
+    
 };
 
 typedef IColorTable* IColorTablePtr;
