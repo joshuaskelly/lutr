@@ -1,10 +1,9 @@
-//
-//  IColorTable.h
-//  pal2cube
-//
-//  Created by Joshua on 8/26/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  IColorTable.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: The interface for color table objects.
+ */
 
 #ifndef pal2cube_IColorTable_h
 #define pal2cube_IColorTable_h

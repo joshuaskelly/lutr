@@ -1,10 +1,8 @@
-//
-//  PNGColorTable.cpp
-//  lutr
-//
-//  Created by Joshua on 9/4/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  PNGColorTable.cpp
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ */
 
 #include <set>
 #include <iostream>
@@ -29,6 +27,12 @@ ColorPtr PNGColorTable::At(int index) {
     return this->colors.at(index);
 }
 
+/*
+ *  Load
+ *  @description: Loads a PNG file as a color table.
+ *  @param filepath: The filepath to the PNG file.
+ *  @returns: True if able to load the color data.
+ */
 bool PNGColorTable::Load(std::string filepath) {
     std::vector<Color> colorSet;
     
@@ -38,6 +42,7 @@ bool PNGColorTable::Load(std::string filepath) {
     
     lodepng::decode(image, width, height, filepath);
     
+    // Load the color data.
     for (std::vector<unsigned char>::iterator it = image.begin(); it != image.end();) {
         unsigned char r = *it; it++;
         unsigned char g = *it; it++;
@@ -46,6 +51,7 @@ bool PNGColorTable::Load(std::string filepath) {
         
         ColorPtr c = new Color(r, g, b);
         
+        // Only add the color if we haven' seen it before.
         if (std::find(colorSet.begin(), colorSet.end(), *c) == colorSet.end()) {
             colorSet.push_back(*c);
             this->colors.push_back(c);

@@ -1,10 +1,9 @@
-//
-//  CubeOutputFormat.h
-//  lutr
-//
-//  Created by Joshua on 9/4/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  CubeOutputFormat.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A class for creating a CUBE format lookup table.
+ */
 
 #ifndef __lutr__CubeOutputFormat__
 #define __lutr__CubeOutputFormat__

@@ -1,10 +1,9 @@
-//
-//  Utility.h
-//  pal2cube
-//
-//  Created by Joshua on 9/2/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  Utility.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A utility class primarily for string operations.
+ */
 
 #ifndef pal2cube_utility_h
 #define pal2cube_utility_h
@@ -32,6 +31,13 @@ static inline std::string &trim(std::string &s) {
     return left_trim(right_trim(s));
 }
 
+/*
+ *  split
+ *  @description: Tokenizes a string given a delimiter.
+ *  @param s: The string to process.
+ *  @param delim: The delimiter.
+ *  @returns: A vector of strings.
+ */
 static inline std::vector<std::string> split(std::string s, std::string delim) {
     std::vector<std::string> result;
     
@@ -53,6 +59,5 @@ static inline std::vector<std::string> split(std::string s, std::string delim) {
     
     return result;
 }
-
 
 #endif

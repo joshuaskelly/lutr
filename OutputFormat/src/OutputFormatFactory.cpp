@@ -1,10 +1,8 @@
-//
-//  OutputFormatFactory.cpp
-//  pal2cube
-//
-//  Created by Joshua on 8/27/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  OutputFormatFactory.cpp
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ */
 
 #include <string>
 
@@ -14,7 +12,15 @@
 
 const std::string OutputFormatFactory::CommandLineFlag = "--output";
 
+/*
+ *  GetOutputFormat
+ *  @description: Constructs an output format object for the given format 
+ *    string.
+ *  @param format: A string describing the desired output format.
+ *  @returns: A pointer to the newly created output format object.
+ */
 IOutputFormatPtr OutputFormatFactory::GetOutputFormat(std::string format) {
+    // If the flag was specified but not the format, complain.
     if (format.length() < OutputFormatFactory::CommandLineFlag.length() + 1) {
         // Show usage
         return nullptr;
@@ -24,6 +30,7 @@ IOutputFormatPtr OutputFormatFactory::GetOutputFormat(std::string format) {
         return nullptr;
     }
     
+    // Get the desired format.
     std::string desiredFormat = format.substr(OutputFormatFactory::CommandLineFlag.length() + 1, format.length() -1);
     
     if (desiredFormat == "console") {
@@ -37,7 +44,7 @@ IOutputFormatPtr OutputFormatFactory::GetOutputFormat(std::string format) {
         return f;
     }
     else {
-        // Show usage
+        std::cout << "Unknown output format: " << desiredFormat << std::endl;
         return nullptr;
     }
 }

@@ -1,10 +1,8 @@
-//
-//  main.cpp
-//  pal2cube
-//
-//  Created by Joshua on 8/26/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  main.cpp
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ */
 
 #include <iostream>
 #include <string>

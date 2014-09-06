@@ -1,10 +1,9 @@
-//
-//  Color.h
-//  pal2cube
-//
-//  Created by Joshua on 8/28/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  Color.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A simple class representing color as an RGB triple.
+ */
 
 #ifndef __pal2cube__Color__
 #define __pal2cube__Color__

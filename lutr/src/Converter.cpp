@@ -1,10 +1,8 @@
-//
-//  Converter.cpp
-//  pal2cube
-//
-//  Created by Joshua on 8/26/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  Converter.cpp
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ */
 
 #include <iostream>
 
@@ -26,12 +24,17 @@ Converter::~Converter() {
     this->outputFormat = nullptr;
 }
 
+/*
+ *  Convert
+ *  @description: Produces a color lookup table from the given color table
+ */
 void Converter::Convert() {
     int lutSize = 8;
     int level = lutSize - 1;
     
     this->outputFormat->Begin();
     
+    // Map a nearest neighbor function over an identity lookup table.
     for (int b = 0; b <= level; b++) {
         for (int g = 0; g <= level; g++) {
             for (int r = 0; r <= level; r++) {
@@ -46,6 +49,7 @@ void Converter::Convert() {
                 Color color(rf, gf, bf);
                 ColorPtr palColor;
                 
+                // Nearest neighbor match.
                 for (int i = 0; i < this->colorTable->Count(); i++) {
                     palColor = this->colorTable->At(i);
                     distance = ColorUtility::Distance(color, *palColor);

@@ -1,10 +1,8 @@
-//
-//  CubeOutputFormat.cpp
-//  lutr
-//
-//  Created by Joshua on 9/4/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  CubeOutpurFormat.cpp
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ */
 
 #include <iostream>
 

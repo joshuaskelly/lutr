@@ -1,10 +1,8 @@
-//
-//  Color.cpp
-//  pal2cube
-//
-//  Created by Joshua on 8/28/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  Color.cpp
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ */
 
 #include "Color.h"
 

@@ -1,10 +1,9 @@
-//
-//  IOutputFormat.h
-//  pal2cube
-//
-//  Created by Joshua on 8/26/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  IOutputFormat.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: The interface for output format objects.
+ */
 
 #ifndef pal2cube_IOutputFormat_h
 #define pal2cube_IOutputFormat_h

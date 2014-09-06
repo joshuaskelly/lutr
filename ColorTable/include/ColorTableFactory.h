@@ -1,10 +1,9 @@
-//
-//  ColorTableFactory.h
-//  pal2cube
-//
-//  Created by Joshua on 8/27/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  ColorTableFactory.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A factory class that handles the creation of color tables.
+ */
 
 #ifndef __pal2cube__ColorTableFactory__
 #define __pal2cube__ColorTableFactory__

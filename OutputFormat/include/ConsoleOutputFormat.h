@@ -1,10 +1,10 @@
-//
-//  ConsoleOutputFormat.h
-//  pal2cube
-//
-//  Created by Joshua on 9/2/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  ConsoleOutputFormat.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A class for outputting lookup table information to the 
+ *    console.
+ */
 
 #ifndef __pal2cube__ConsoleOutputFormat__
 #define __pal2cube__ConsoleOutputFormat__

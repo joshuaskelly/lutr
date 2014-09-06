@@ -1,10 +1,8 @@
-//
-//  ColorTableFactory.cpp
-//  pal2cube
-//
-//  Created by Joshua on 8/27/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  ColorTableFactory.cpp
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ */
 
 #include <iostream>
 
@@ -14,10 +12,17 @@
 #include "PNGColorTable.h"
 #include "Utility.h"
 
+/*
+ *  GetColorTable
+ *  @description: Constructs a color table from the give filepath.
+ *  @param path: A filepath to a file that can be used as a color table.
+ *  @returns: A pointer to the newly constructed color table.
+ */
 IColorTablePtr ColorTableFactory::GetColorTable(std::string path) {
     std::string fileExtension = "";
     std::string fileName = "";
     
+    // Figure out the filename and extension.
     for (std::string::reverse_iterator rit = path.rbegin(); rit != path.rend(); rit++) {
         char current = *rit;
         

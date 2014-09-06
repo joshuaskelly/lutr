@@ -1,10 +1,9 @@
-//
-//  ACTColorTable.h
-//  pal2cube
-//
-//  Created by Joshua on 8/27/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  ACTColorTable.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A class for working with ACT palette files.
+ */
 
 #ifndef __pal2cube__ACTColorTable__
 #define __pal2cube__ACTColorTable__

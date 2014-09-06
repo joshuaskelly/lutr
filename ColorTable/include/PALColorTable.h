@@ -1,10 +1,10 @@
-//
-//  PALColorTable.h
-//  pal2cube
-//
-//  Created by Joshua on 8/30/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  PALColorTable.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A class for working with PAL palette files.
+ *  @todo: Add support for Microsoft Palette files.
+ */
 
 #ifndef __pal2cube__PALColorTable__
 #define __pal2cube__PALColorTable__

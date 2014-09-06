@@ -1,10 +1,9 @@
-//
-//  ColorUtility.h
-//  pal2cube
-//
-//  Created by Joshua on 8/28/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  ColorUtility.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A utility class for operations on colors.
+ */
 
 #ifndef __pal2cube__ColorUtility__
 #define __pal2cube__ColorUtility__

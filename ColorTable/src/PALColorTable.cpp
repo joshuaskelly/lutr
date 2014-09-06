@@ -1,10 +1,8 @@
-//
-//  PALColorTable.cpp
-//  pal2cube
-//
-//  Created by Joshua on 8/30/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  PALColorTable.cpp
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ */
 
 #include <iostream>
 #include <fstream>
@@ -30,6 +28,13 @@ ColorPtr PALColorTable::At(int index) {
     return this->colors.at(index);
 }
 
+/*
+ *  Load
+ *  @description: Loads a .PAL file. There are two types of PAL file. One is the
+ *    JASC palette format, the other is a Microsoft RIFF format.
+ *  @param filepath: The path to a .PAL file.
+ *  @returns: True if able to load the color data.
+ */
 bool PALColorTable::Load(std::string filepath) {
     std::ifstream file(filepath);
     
@@ -39,13 +44,23 @@ bool PALColorTable::Load(std::string filepath) {
     
     line = trim(line);
 
+    // Determine which type of .PAL file we are working with.
     if (line == "JASC-PAL") {
         return LoadJASC(filepath);
+    }
+    else {
+        return LoadMicrosoft(filepath);
     }
     
     return false;
 }
 
+/*
+ *  LoadJASC
+ *  @description: Loads the color data for a JASC format palette file.
+ *  @param filepath: The filepath to the JASC format PAL file.
+ *  @returns: Whether the loading of color data was successful.
+ */
 bool PALColorTable::LoadJASC(std::string filepath) {
     std::string line;
     
@@ -54,8 +69,10 @@ bool PALColorTable::LoadJASC(std::string filepath) {
     std::getline(file, line);
     std::getline(file, line);
     
+    // The color count is always the fourth line.
     size_t colorCount = atoi(line.substr(0, line.length() - 1).c_str());
     
+    // Load the color data.
     for (int i = 0; i < colorCount; i++) {
         std::getline(file, line);
         line = trim(line);
@@ -77,6 +94,13 @@ bool PALColorTable::LoadJASC(std::string filepath) {
     return true;
 }
 
+/*
+ *  LoadMicrosoft
+ *  @description: Loads the color data for a Microsoft RIFF format palette file.
+ *  @param filepath: The filepath to the file.
+ *  @returns: True if able to load the color data.
+ *  @todo: Support this file format
+ */
 bool PALColorTable::LoadMicrosoft(std::string filepath) {
     std::cout << "Microsoft Palette format is currently not supported." << std::endl;
     return false;

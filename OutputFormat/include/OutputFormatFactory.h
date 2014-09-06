@@ -1,10 +1,10 @@
-//
-//  OutputFormatFactory.h
-//  pal2cube
-//
-//  Created by Joshua on 8/27/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  OutputFormatFactory.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A factory class that handles the creation and configuration
+ *    of output format objects.
+ */
 
 #ifndef __pal2cube__OutputFormatFactory__
 #define __pal2cube__OutputFormatFactory__

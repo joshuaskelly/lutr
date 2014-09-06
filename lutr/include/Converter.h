@@ -1,10 +1,10 @@
-//
-//  Converter.h
-//  pal2cube
-//
-//  Created by Joshua on 8/26/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  Converter.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A class that creates a lookup table given a color table source
+ *    and a desired output format.
+ */
 
 #ifndef __pal2cube__Converter__
 #define __pal2cube__Converter__

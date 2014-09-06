@@ -1,10 +1,9 @@
-//
-//  PNGColorTable.h
-//  lutr
-//
-//  Created by Joshua on 9/4/14.
-//  Copyright (c) 2014 Joshua Skelton. All rights reserved.
-//
+/*
+ *  PNGColorTable.h
+ *
+ *  @author: Joshua Skelton joshua.skelton@gmail.com
+ *  @description: A class for working with PNG files as color tables.
+ */
 
 #ifndef __lutr__PNGColorTable__
 #define __lutr__PNGColorTable__
