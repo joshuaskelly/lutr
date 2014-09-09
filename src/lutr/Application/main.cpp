@@ -12,7 +12,7 @@
 #include "OutputFormatFactory.h"
 
 void showUsage() {
-    std::cout << "usage: lutr [--output=format] file ..." << std::endl;
+    std::cout << "usage: lutr file ..." << std::endl;
 }
 
 int main(int argc, const char* argv[])
