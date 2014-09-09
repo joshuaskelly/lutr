@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Application", "Application\Application.vcxproj", "{6D6F27D4-6C58-4425-B4D4-B3281A022354}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B1DEA33C-9464-4499-B278-04C4E3196ACC} = {B1DEA33C-9464-4499-B278-04C4E3196ACC}
+		{4D5E944D-CE05-4C22-8435-013314252934} = {4D5E944D-CE05-4C22-8435-013314252934}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Color", "Color\Color.vcxproj", "{A8219D66-01D2-46AF-AD30-9682EF15A751}"
 EndProject
