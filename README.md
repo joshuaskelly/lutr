@@ -17,7 +17,7 @@ Will create a 3D lookup table named mycoolimage.png.cube.
 
 ## Support
 
-Currently lutr supports a few input formats and a single output format.
+Currently lutr supports several input formats and a single output format.
 
 ### Input
 * PNG
