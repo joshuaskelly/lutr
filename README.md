@@ -29,9 +29,9 @@ Currently lutr supports several input formats and a single output format.
 
 ## Contribute
 
-You want to help make lutr better? High-five! Feel free to submit a pull request.
+Want to help make lutr better? High-five! Feel free to submit a pull request.
 
-Did you make something mind-blowingly awesome using lutr? Right on! Do share the awesomeness with me.
+Make something mind-blowingly awesome using lutr? Right on! Do share the awesomeness with me.
 
 ## Credit
 
