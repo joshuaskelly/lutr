@@ -32,6 +32,6 @@ private:
     int b;
 };
 
-typedef Color* ColorPtr;
+using ColorPtr = Color*;
 
 #endif

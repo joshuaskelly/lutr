@@ -20,6 +20,6 @@ public:
     
 };
 
-typedef IColorTable* IColorTablePtr;
+using IColorTablePtr = IColorTable*;
 
 #endif

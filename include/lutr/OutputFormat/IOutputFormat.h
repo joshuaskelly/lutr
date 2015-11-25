@@ -22,6 +22,6 @@ public:
     virtual void ColorTable(IColorTablePtr colorTable) = 0;
 };
 
-typedef IOutputFormat* IOutputFormatPtr;
+using IOutputFormatPtr = IOutputFormat*;
 
 #endif
